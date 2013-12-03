@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Subscription_Delete`(
     Guid			    BINARY(16),
     RequestingUserGuid     BINARY(16)
@@ -34,4 +36,4 @@ BEGIN
     
     END IF;
 
-END
+END //

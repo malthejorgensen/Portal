@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE ClientSettings_Set
 (
     Guid        BINARY(16),
@@ -27,4 +29,4 @@ BEGIN
 
     SELECT ROW_COUNT();
 
-END
+END //

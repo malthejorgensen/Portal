@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Group_Update`(
 	NewName             VARCHAR(255),
 	NewSystemPermission INT UNSIGNED,
@@ -19,4 +21,4 @@ BEGIN
     
     END IF;
 
-END
+END //

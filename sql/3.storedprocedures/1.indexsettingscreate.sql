@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `IndexSettings_Create`(
     IN  ID          INT UNSIGNED,
     IN  ModuleID    INT UNSIGNED,
@@ -9,4 +11,4 @@ BEGIN
     INSERT INTO IndexSettings ( ID, ModuleID, Settings, DateCreated )
          VALUES ( ID, ModuleID, Settings, NOW() );
 
-END
+END //

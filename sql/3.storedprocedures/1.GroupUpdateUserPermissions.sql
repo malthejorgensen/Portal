@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Group_UpdateUserPermissions`(
     IN  GroupGUID       BINARY(16),
     IN  UserGUID        BINARY(16),
@@ -14,4 +16,4 @@ BEGIN
     ELSE
         SET ErrorCode = -100;
     END IF;
-END
+END //

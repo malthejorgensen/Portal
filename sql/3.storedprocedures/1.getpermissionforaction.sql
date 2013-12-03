@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE FUNCTION `GetPermissionForAction`(
     TableIdentifier VARCHAR(16),
     Name	          VARCHAR(255)
@@ -12,4 +14,4 @@ BEGIN
             P.Name            = Name;
 
     RETURN Permission;
-END
+END //

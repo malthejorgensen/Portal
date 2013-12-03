@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `User_Get`(
     IN  GUID    BINARY(16)
 )
@@ -7,4 +9,4 @@ BEGIN
       FROM  `User`
      WHERE  `User`.GUID = GUID;
 
-END
+END //

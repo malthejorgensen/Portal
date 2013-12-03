@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Group_Delete`(
 	Guid		  BINARY(16),
 	UserGuid	BINARY(16)
@@ -30,4 +32,4 @@ BEGIN
      
      END IF;
 
-END
+END //

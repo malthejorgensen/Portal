@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `User_Create`(
     Guid    BINARY(16),
     Email   VARCHAR(1024)
@@ -9,4 +11,4 @@ BEGIN
 
     SELECT ROW_COUNT();
 
-END
+END //

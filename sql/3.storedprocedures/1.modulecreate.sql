@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Module_Create`
 (
     IN  ID 		INT UNSIGNED,
@@ -11,4 +13,4 @@ BEGIN
 
     SELECT ID;
 
-END
+END //

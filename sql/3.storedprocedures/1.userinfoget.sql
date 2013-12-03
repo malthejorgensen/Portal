@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `UserInfo_Get`(
     Guid        BINARY(16),
     SessionGuid BINARY(16),
@@ -15,4 +17,4 @@ BEGIN
 				( SELECT * FROM Group_User_Join AS guj WHERE guj.UserGUID = UI.GUID AND guj.GroupGUID = GroupGuid)
 			);
 
-END
+END //

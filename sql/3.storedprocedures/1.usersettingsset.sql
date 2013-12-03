@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE UserSettings_Set(
     ClientSettingsGuid  BINARY(16),
     UserGuid            BINARY(16),
@@ -22,4 +24,4 @@ BEGIN
 
 	SELECT ROW_COUNT();
 
-END
+END //

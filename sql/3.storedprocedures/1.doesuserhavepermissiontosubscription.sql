@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE FUNCTION `DoesUserHavePermissionToSubscription`(
     UserGUID            BINARY(16),
     SubscriptionGUID    BINARY(16),
@@ -22,4 +24,4 @@ BEGIN
     -- Return the result of the function
     RETURN (Result);
 
-END
+END //

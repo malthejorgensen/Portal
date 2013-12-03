@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Group_Get`(
 	Guid				BINARY(16),
 	Name				VARCHAR(255),
@@ -13,4 +15,4 @@ BEGIN
 			( UserGuid IS NULL OR EXISTS 
 				( SELECT * FROM Group_User_Join AS guj WHERE guj.UserGUID = UserGuid AND guj.GroupGUID = G.GUID)
 			);
-END
+END //

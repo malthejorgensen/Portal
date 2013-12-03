@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `IndexSettings_Get`(
     IN ModuleID INTEGER
 )
@@ -7,4 +9,4 @@ BEGIN
       FROM	IndexSettings AS InS
      WHERE	InS.ModuleID = ModuleID;
 
-END
+END //

@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Session_Delete`(
 	Guid		BINARY(16),
 	UserGuid	BINARY(16)
@@ -13,4 +15,4 @@ BEGIN
             
     SELECT ROW_COUNT();
             
-END
+END //

@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE FUNCTION DoesUserHavePermissionToSystem
 (
     UserGUID        BINARY(16),
@@ -11,4 +13,4 @@ BEGIN
 	
     RETURN RequiredPermission & GetUsersHighestSystemPermission( UserGUID ) = RequiredPermission;
 
-END
+END //

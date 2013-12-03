@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `SubscriptionInfo_Get`(
 	Guid               BINARY(16),
 	RequestUserGuid    BINARY(16)
@@ -12,4 +14,4 @@ BEGIN
 			( GUid IS NULL OR SubscriptionInfo.GUID = Guid )
         AND DoesUserHavePermissionToSubscription( RequestUserGuid, SubscriptionInfo.GUID, 'Get' ) = 1 ;
 
-END
+END //

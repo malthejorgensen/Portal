@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Log_Create`(
     Name            VARCHAR(255),
     Level           VARCHAR(50), 
@@ -17,4 +19,4 @@ BEGIN
              
     SELECT ROW_COUNT();
 
-END
+END //

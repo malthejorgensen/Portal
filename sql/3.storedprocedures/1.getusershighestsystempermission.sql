@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE FUNCTION `GetUsersHighestSystemPermission`(
     UserGUID        BINARY(16)
 ) RETURNS int(10) unsigned
@@ -43,4 +45,4 @@ BEGIN
         RETURN AccumulatedPermission;
 
 
-END
+END //

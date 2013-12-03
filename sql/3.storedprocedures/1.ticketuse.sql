@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Ticket_Use`(
     IN  WhereGUID   BINARY(16)
 )
@@ -9,4 +11,4 @@ BEGIN
 
     SELECT ROW_COUNT();
 
-END
+END //

@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Module_Get`(
 	ID      INTEGER,
     Name    VARCHAR(255)
@@ -9,4 +11,4 @@ BEGIN
 	   WHERE	( ID   IS NULL OR M.ID   = ID ) AND
 			      ( Name IS NULL AND M.ID IN (1,2,3,4) OR M.Name = Name );
 
-END
+END //

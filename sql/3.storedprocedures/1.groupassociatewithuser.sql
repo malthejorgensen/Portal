@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Group_AssociateWithUser`(
     IN  GroupGUID       BINARY(16),
     IN  UserGUID        BINARY(16),
@@ -18,4 +20,4 @@ BEGIN
     END IF;
     
 
-END
+END //

@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Session_Update`(
 	UserGuid            BINARY(16),
 	WhereSessionGuid    BINARY(16),
@@ -16,4 +18,4 @@ BEGIN
             
     SELECT ROW_COUNT();
     
-END
+END //

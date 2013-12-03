@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `UserSettings_Delete`(
     ClientSettingsGuid  BINARY(16),
     UserGuid            BINARY(16)
@@ -11,4 +13,4 @@ BEGIN
     
     SELECT 1;
 
-END
+END //

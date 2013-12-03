@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Ticket_Create`(
     IN  GUID            BINARY(16),
     IN  TicketTypeID    INTEGER,
@@ -11,4 +13,4 @@ BEGIN
 
     SELECT ROW_COUNT();
 
-END
+END //

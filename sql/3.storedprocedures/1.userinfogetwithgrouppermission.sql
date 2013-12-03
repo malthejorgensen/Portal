@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE UserInfo_GetWithGroupPermission(
     Guid        BINARY(16)
 )
@@ -11,4 +13,4 @@ BEGIN
 			myGroups.UserGUID = Guid
 		AND myGroups.Permission & 8 = 8;
 
-END
+END //

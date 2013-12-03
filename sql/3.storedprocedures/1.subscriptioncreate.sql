@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Subscription_Create`(
 	Guid			BINARY(16),
 	Name			VARCHAR(255),
@@ -29,4 +31,4 @@ BEGIN
 
     END IF;
 
-END
+END //

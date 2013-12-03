@@ -1,0 +1,14 @@
+source 1.tables/1.clientsettings.sql
+source 1.tables/1.group.sql
+source 1.tables/1.log.sql
+source 1.tables/1.module.sql
+source 1.tables/1.permission.sql
+source 1.tables/1.session.sql
+source 1.tables/1.subscription.sql
+source 1.tables/1.tickettype.sql
+source 1.tables/1.user.sql
+source 1.tables/2.groupuserjoin.sql
+source 1.tables/2.indexsettings.sql
+source 1.tables/2.subscriptionuserjoin.sql
+source 1.tables/2.ticket.sql
+source 1.tables/2.usersettings.sql

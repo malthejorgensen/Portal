@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Group_RemoveUser`(
     IN  GroupGUID       BINARY(16),
     IN  UserGUID        BINARY(16),
@@ -18,4 +20,4 @@ BEGIN
         SET ErrorCode = -100;
     END IF;
 
-END
+END //

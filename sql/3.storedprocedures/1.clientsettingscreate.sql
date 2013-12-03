@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE ClientSetting_Create(
     GUID        BINARY(16),
     Name        VARCHAR(255),
@@ -10,4 +12,4 @@ BEGIN
 	VALUES 
 		( GUID, Name, Settings, NOW() );
 
-END
+END //

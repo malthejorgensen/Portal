@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Permission_Create`(
     TableIdentifier VARCHAR(255),
     Permission      INT(10) UNSIGNED,
@@ -9,4 +11,4 @@ BEGIN
     INSERT INTO Permission( TableIdentifier, Permission, Name, Description )
          VALUES ( TableIdentifier, Permission, Name, Description );
 
-END
+END //

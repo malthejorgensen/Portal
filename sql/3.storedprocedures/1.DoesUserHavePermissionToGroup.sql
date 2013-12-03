@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE FUNCTION DoesUserHavePermissionToGroup(
     UserGUID        BINARY(16),
     GroupGUID	      BINARY(16),
@@ -17,4 +19,4 @@ BEGIN
             GUJ.Permission & RequiredPermission = RequiredPermission;
 
     RETURN (Result > 0);
-END
+END //

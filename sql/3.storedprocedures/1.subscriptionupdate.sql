@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `Subscription_Update`(
 	Guid            BINARY(16),
 	NewName         VARCHAR(255),
@@ -20,4 +22,4 @@ BEGIN
 
     END IF;
 
-END
+END //

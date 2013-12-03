@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE `UserSettings_Get`(
     ClientSettingsGuid  BINARY(16),
     UserGuid            BINARY(16)
@@ -9,4 +11,4 @@ BEGIN
      WHERE  UserSettings.ClientSettingsGUID = ClientSettingsGuid AND
             UserSettings.UserGUID           = UserGuid;
 
-END
+END //
