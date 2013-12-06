@@ -74,10 +74,10 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="App.config">
+    <!-- <None Include="App.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </None> -->
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\app\Chaos.Portal.Core\Chaos.Portal.Core.csproj">
